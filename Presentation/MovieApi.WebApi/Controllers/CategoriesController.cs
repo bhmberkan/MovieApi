@@ -61,7 +61,7 @@ namespace MovieApi.WebApi.Controllers
         [HttpGet("GetCategory")]
         public async Task<IActionResult> GetCategory(int id)
         {
-            var value = _getCategoryByIdQueryHandler.Handle(new GetCategoryByIdQuery(id));
+            var value = await _getCategoryByIdQueryHandler.Handle(new GetCategoryByIdQuery(id));
             return Ok(value);
         }
 

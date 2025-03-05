@@ -13,7 +13,7 @@ namespace MovieApi.Persistence
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Server=DESKTOP-AV1UIG0; initial Catalog=ApiMovieDb; integrated Security=true;TrustServerCertificate=Yes");
+            optionsBuilder.UseSqlServer("Server=DESKTOP-AV1UIG0; initial Catalog=ApiMovieDb; integrated Security=true;  TrustServerCertificate=Yes" );
         }
         // veri tabanına yansıtacağımız tablolarımızı yazıyoruz
 
