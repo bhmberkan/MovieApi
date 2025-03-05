@@ -53,7 +53,7 @@ namespace MovieApi.WebApi.Controllers
         [HttpGet("GetMovie")]
         public async Task<IActionResult> GetMovie(int id)
         {
-            var value = _getMovieByIdQueryHandler.Handle(new GetMovieByIdQuery(id));
+            var value = await  _getMovieByIdQueryHandler.Handle(new GetMovieByIdQuery(id));
             return Ok(value);
         }
 
@@ -63,5 +63,7 @@ namespace MovieApi.WebApi.Controllers
             await _updateMovieCommnandHandler.Handler(command);
             return Ok("Film Güncelleme işlemi başarılı");
         }
+
+
     }
 }
