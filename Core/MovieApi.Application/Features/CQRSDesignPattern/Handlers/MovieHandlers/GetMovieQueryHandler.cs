@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using MovieApi.Application.Features.CQRSDesignPattern.Results.MovieResult;
-using MovieApi.Persistence;
+using MovieApi.Persistence.Context;
 using System;
 using System.Collections.Generic;
 using System.Linq;
