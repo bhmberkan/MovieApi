@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using MovieApi.Application.Features.MediatorDesignPattern.Queries.TagQueries;
 using MovieApi.Application.Features.MediatorDesignPattern.Results.TagResult;
-using MovieApi.Persistence;
+using MovieApi.Persistence.Context;
 using System;
 using System.Collections.Generic;
 using System.Linq;

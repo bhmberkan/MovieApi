@@ -1,6 +1,6 @@
 ﻿using MovieApi.Application.Features.CQRSDesignPattern.Queries.CategoryQueries;
 using MovieApi.Application.Features.CQRSDesignPattern.Results.CategoryResults;
-using MovieApi.Persistence;
+using MovieApi.Persistence.Context;
 using System;
 using System.Collections.Generic;
 using System.Linq;

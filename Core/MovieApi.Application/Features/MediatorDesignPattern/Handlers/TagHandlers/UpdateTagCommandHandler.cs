@@ -1,6 +1,6 @@
 ﻿using MediatR;
 using MovieApi.Application.Features.MediatorDesignPattern.Command.TagCommands;
-using MovieApi.Persistence;
+using MovieApi.Persistence.Context;
 
 namespace MovieApi.Application.Features.MediatorDesignPattern.Handlers.TagHandlers
 {
