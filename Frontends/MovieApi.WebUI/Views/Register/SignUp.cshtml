@@ -1,0 +1,58 @@
+﻿@model CreateUserRegisterDto
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Yeni Kullanıcı Kaydı</title>
+	<!-- Mobile Specific Metas -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!-- Font-->
+	<link rel="stylesheet" type="text/css" href="/colorlib-regform-31/css/roboto-font.css">
+	<link rel="stylesheet" type="text/css" href="/colorlib-regform-31/fonts/font-awesome-5/css/fontawesome-all.min.css">
+	<!-- Main Style Css -->
+	<link rel="stylesheet" href="/colorlib-regform-31/css/style.css" />
+</head>
+<body class="form-v5">
+	<div class="page-content">
+		<div class="form-v5-content">
+			<form class="form-detail"  method="post">
+				<h2>Movie Api Yeni Kullanıcı Kaydı</h2>
+				<div class="form-row">
+					<label for="full-name">Adınız</label>
+					<input type="text" asp-for="Name" id="full-name" class="input-text" placeholder="Adınız..." required>
+					<i class="fas fa-user"></i>
+				</div>
+
+				<div class="form-row">
+					<label for="full-name">Soy Adınız</label>
+					<input type="text" asp-for="SurName" id="full-name" class="input-text" placeholder="Soyadınız..." required>
+					<i class="fas fa-car"></i>
+				</div>
+
+				<div class="form-row">
+					<label for="full-name">Kullanıcı Adınız</label>
+					<input type="text" asp-for="UserName" id="full-name" class="input-text" placeholder="Kullanıcı Adınız..." required>
+					<i class="fas fa-cloud"></i>
+				</div>
+				<div class="form-row">
+					<label for="your-email">Email Adresiniz</label>
+					<input type="text" asp-for="Email" id="your-email" class="input-text" placeholder="test@example.com" required >
+					<i class="fas fa-envelope"></i>
+				</div>
+				<div class="form-row">
+					<label for="password">Şifreniz</label>
+					<input type="password" asp-for="Password" id="password" class="input-text" placeholder="******" required>
+					<i class="fas fa-lock"></i>
+				</div>
+				<div class="form-row-last">
+					<input type="submit" name="register" class="register" value="Kayıt Oluştur">
+				</div>
+			</form>
+		</div>
+	</div>
+</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+</html>
